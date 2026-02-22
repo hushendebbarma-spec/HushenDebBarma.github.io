@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hushen Debbarma - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #333;
+            font-weight: 600;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            font-weight: 300;
+        }
+
+        nav {
+            background: #fff;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 5px 8px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+        h2.section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #444;
+            position: relative;
+            display: inline-block;
+        }
+        h2.section-title::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 50px;
+            background: #007bff;
+            margin: 8px auto 0;
+        }
+
+        #about p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Projects section */
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project {
+            background: #fff;
+            padding: 20px;
+            width: calc(33% - 20px);
+            margin-bottom: 30px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .project p {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        /* Contact section */
+        #contact .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #contact .contact-info p {
+            font-size: 1.1em;
+            color: #444;
+        }
+        #contact .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        #contact .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .projects-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project {
+                width: 80%;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hushen Debbarma</h1>
+        <p>Software Developer | Tech Enthusiast</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus.</p>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-list">
+                <div class="project">
+                    <h3>Project One</h3>
+                    <p>A brief description of the first project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Two</h3>
+                    <p>A brief description of the second project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Three</h3>
+                    <p>A brief description of the third project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                <p>GitHub: <a href="#">github.com/yourusername</a></p>
+                <p>LinkedIn: <a href="#">linkedin.com/in/yourusername</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Hushen Debbarma. All rights reserved.
+    </footer>
+
+</body>
+</html>
